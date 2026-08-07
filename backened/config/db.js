@@ -1,13 +1,13 @@
 import mongoose from "mongoose";
 
 export const connectDB = async () => {
-  try {
-    await mongoose.connect(
-      "mongodb+srv://sarathearyan731_db_user:Sarathe312@cluster0.ppljmuk.mongodb.net/commerce"
-    );
+    try {
 
-    console.log("DB Connected");
-  } catch (error) {
-    console.log("MongoDB connection error:", error);
-  }
+        await mongoose.connect(process.env.MONGO_URI);
+
+        console.log("DB Connected");
+
+    } catch (error) {
+        console.log("MongoDB connection error:", error);
+    }
 };
