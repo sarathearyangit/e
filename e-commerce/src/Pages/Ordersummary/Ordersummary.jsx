@@ -85,7 +85,8 @@ const Ordersummary = () => {
                 localStorage.setItem("orderAmount", orderTotal);
                 window.location.href = response.data.session_url;
             } else {
-                alert("Order failed");
+                console.log("Backend response:", response.data);
+                alert(response.data.message);
             }
 
         } catch (error) {
