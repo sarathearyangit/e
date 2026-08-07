@@ -25,7 +25,7 @@ const StoreContextProvider = (props) => {
     const [OrderSummary, setOrderSummary] = useState(false);
     const [loading, setLoading] = useState(true);
 
-    const urlBase = "http://localhost:5000";
+    const urlBase = "https://e-backened.onrender.com";
 
     // ------------------ CALCULATIONS ------------------
     const subtotal = cart.reduce((acc, item) =>
