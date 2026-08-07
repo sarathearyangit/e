@@ -17,7 +17,7 @@ const Ordersummary = () => {
     const [user, setUser] = useState(null);
     const [address, setAddress] = useState("");   // ✅ NEW STATE
 
-    const url = "http://localhost:5000";
+    const url = "https://e-backened.onrender.com";
 
     // 🔥 FETCH LOGGED-IN USER
     useEffect(() => {
